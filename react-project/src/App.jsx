@@ -1,10 +1,10 @@
 import './App.css'
 
-function Header(props) {
+function Header( {name, year} ) {
   return (
     <header>
-      <h1>This is a new function with {props.name}</h1>
-      <p>Copyright {props.year}</p>
+      <h1>This is a new function with {name}</h1>
+      <p>Copyright {year}</p>
     </header>
   );
 }
