@@ -1,5 +1,6 @@
 import './App.css'
 import chef from './images/chef.jpg'
+import { useState } from 'react'
 
 function Header( {name, year} ) {
   return (
@@ -36,11 +37,14 @@ function Main({ dishes }) {
 }
     
 function App() {
+  const [status, setStatus] = useState(true);
 
-  return (
-    <>
+  return (                //if the status true? return open if false return close
+    <>                     
+    <h4>The restaurant is {status ? "Open" : "Close"}</h4>
     <Header name={"Alex"} year={new Date().getFullYear()}/>
     <Main dishes={dishObejcts}/>
+    <button onClick={()=> setStatus(!status)}>{status ? "Close" : "Open"} restaurant</button>
     </>
   );
 }
