@@ -1,9 +1,10 @@
 import './App.css'
+import chef from './images/chef.jpg'
 
 function Header( {name, year} ) {
   return (
     <header>
-      <h1>This is a new function with {name}</h1>
+      <h1>{name}'s Kitchen</h1>
       <p>Copyright {year}</p>
     </header>
   );
@@ -23,14 +24,17 @@ const dishObejcts = items.map((dish, idx) => ({
 
 function Main({ dishes }) {
   return (
-    <ul>
+    <main>
+      <img src={chef} alt="a photo of a Chef" style={{ width: '200px', borderRadius: '50%'}}/>
+      <ul>
       {dishes.map((dish) => (
         <li key={dish.id} style={{ listStyleType: 'none'}}>{dish.title}</li>
       ))}
     </ul>
+    </main>
   );
 }
-
+    
 function App() {
 
   return (
