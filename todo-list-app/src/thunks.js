@@ -3,7 +3,7 @@ import {
   loadingStarted,
   loadingCompleted,
   loadingFailed,
-} from './LoadingSlice';
+} from './loadingSlice';
 import {
   todosUpdated,
 } from './todosSlice';
