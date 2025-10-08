@@ -1,0 +1,1 @@
+console.log('Hello, React!, this is the react rendered file');
