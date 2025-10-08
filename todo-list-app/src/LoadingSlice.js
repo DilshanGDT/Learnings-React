@@ -4,7 +4,7 @@ export const loadingSlice = createSlice({
   name: 'loading',
   initialState: {
     value: {
-      completed: true,  // indicates if loading is done
+      completed: true,
       successful: false,
     },
   },
