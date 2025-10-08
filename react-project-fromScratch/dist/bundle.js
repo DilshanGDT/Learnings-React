@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./App.js":
+/*!****************!*\
+  !*** ./App.js ***!
+  \****************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nvar App = function App(_ref) {\n  var message = _ref.message;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"This is the message for you : \", message);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://react-project-fromscratch/./App.js?\n}");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n\n\n\n// Create a React component\nvar App = function App() {\n  // (create element, props, children)\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('h1', null, 'This is a React script');\n};\n\n// Render the component to the DOM\nvar container = document.getElementById(\"root\");\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);\n\n//root.render(<App />);   // by default JSX not supported in most browsers\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App)); // without JSX\n\n//# sourceURL=webpack://react-project-fromscratch/./index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.js */ \"./App.js\");\n\n\n\n\n// Create a React component\n// const App = () => {         // (create element, props, children)\n//   return React.createElement('h1', null, 'This is a React script');\n// }\n\n// Render the component to the DOM\nvar container = document.getElementById(\"root\");\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);\n\n//root.render(<App />);   // by default JSX not supported in most browsers\nroot.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n  message: \"Hey there! You are now using a component from other file\"\n})); // without JSX\n\n//# sourceURL=webpack://react-project-fromscratch/./index.js?\n}");
 
 /***/ }),
 
