@@ -4,9 +4,12 @@ import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import './index.css'
 import App from './App.jsx'
+import { todosSlice } from './todosSlice.js'
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    todos: todosSlice.reducer,  // we are adding the todos slice reducer to the store
+  },
 });
 
 // provider allows us to use redux store in our app
